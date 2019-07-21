@@ -1,5 +1,5 @@
 FROM centos:centos7
-MAINTAINER tcnksm "nsd22843@gmail.com"
+MAINTAINER knik "nikita.hldm@gmail.com"
 
 RUN yum -y update && yum -y groupinstall 'Development Tools' && yum -y install \
     kernel-devel \
@@ -24,7 +24,10 @@ RUN yum -y update && yum -y groupinstall 'Development Tools' && yum -y install \
     libxslt-devel \
     zlib-devel \
     libyaml-devel \
+    glibc-static \
+    libstdc++-static \
     wget \
+    which \
     && yum clean all
 
 RUN yum -y update && yum install -y \
