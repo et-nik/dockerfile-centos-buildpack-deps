@@ -1,4 +1,4 @@
-Dockerfile-CentOS-buildpack-deps [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/tcnksm/dockerfile-centos-buildpack-deps/blob/master/LICENCE)
+Dockerfile-CentOS-buildpack-deps [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/et-nik/dockerfile-centos-buildpack-deps/blob/master/LICENCE)
 ====
 
 [et-nik/centos-buildpack-deps Repository | Docker Hub Registry - Repositories of Docker Images](https://registry.hub.docker.com/u/knik/centos-buildpack-deps/)
