@@ -1,11 +1,14 @@
-FROM centos:centos6
+FROM centos:8
 MAINTAINER knik "nikita.hldm@gmail.com"
 
-RUN yum -y update && yum -y groupinstall 'Development Tools' && yum -y install \
+RUN dnf -y install https://download-ib01.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm \
+    && dnf -y update \
+    && dnf -y groupinstall 'Development Tools' \
+    && dnf -y --enablerepo=PowerTools install \
         kernel-devel \
         ImageMagick-devel \
         bzip2-devel \
-        libcurl \
+        libcurl-minimal \
         libcurl-devel \
         openssl-devel \
         libevent-devel \
@@ -19,21 +22,15 @@ RUN yum -y update && yum -y groupinstall 'Development Tools' && yum -y install \
         readline-devel \
         sqlite-devel \
         openssl \
-        openssl-devel \
         libxml2-devel \
         libxslt-devel \
         zlib-devel \
+        libyaml-devel \
         glibc-static \
         libstdc++-static \
         wget \
-        git \
-        bzr \
+        which \
         mercurial \
+        git \
         tar \
-    && yum clean all
-
-RUN rpm --import http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-6 \
-    && rpm -Kih http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm \
-    && yum -y install libyaml-devel \
-    && yum clean all
-    
+    && dnf -y clean all

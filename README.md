@@ -13,7 +13,8 @@ This Dockerfile is ported from Debian's [buildpack-deps](https://github.com/dock
 
 `knik/centos-buildpack-deps` image supports the below tags. Each link is its `Dockerfile`:
 
-- [`latest`,`7` (7/Dockerfile)](https://github.com/et-nik/dockerfile-centos-buildpack-deps/blob/master/7/Dockerfile)
+- [`latest`,`8` (8/Dockerfile)](https://github.com/et-nik/dockerfile-centos-buildpack-deps/blob/master/8/Dockerfile)
+- [`7` (7/Dockerfile)](https://github.com/et-nik/dockerfile-centos-buildpack-deps/blob/master/7/Dockerfile)
 - [`6` (6/Dockerfile)](https://github.com/et-nik/dockerfile-centos-buildpack-deps/blob/master/6/Dockerfile)
 - [`5` (5/Dockerfile)](https://github.com/et-nik/dockerfile-centos-buildpack-deps/blob/master/5/Dockerfile)
 
@@ -21,4 +22,4 @@ Tags correspond to the base CentOS version.
 
 ## Author
 
-[tcnksm](https://github.com/tcnksm)
+* [tcnksm](https://github.com/tcnksm)
